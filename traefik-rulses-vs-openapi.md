@@ -5,7 +5,7 @@
 | OpenAPI 3 | Traefik | Notes |
 |-----------|---------|-------|
 | `paths` | Routes | Similar concept - defining endpoints and their behaviors |
-| `servers` | EntryPoints | Define where the API is available |
+| `servers` | EntryPoints, Host | Define where the API is available and Host matcher |
 | Path parameters | PathRegexp | e.g., `/users/{id}` in OpenAPI, `/users/[0-9]+` in Traefik |
 | Operation (GET, POST) | Method matcher | Both specify HTTP methods |
 | `consumes`/`produces` | Header matcher | Content-Type/Accept headers in Traefik |
